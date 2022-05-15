@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prognoza Pogody</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="cityDropDown">
+
+        <div id="inputCityContainer">Wprowadź nazwę miasta</div>
+        <div class="autocomplete">
+            <input id= "inputCity" placeholder="Miasto" list="cityList">
+            <datalist id="cityList">
+            </datalist>
+            <button id="submitButton">Zatwierdź</button>
+        </div>
+
+    </div>
+
+
+    <div id="loader" class="loader" style="display: none">
+        <img src="ikonki/loading.svg" />
+    </div>
+
+    <div id="weatherForecast" class="weatherBox" style="display: none;">
+
+        <div id="cityAndDayContainer">
+            <span id="day"></span>
+            <span id="city"></span>
+        </div>
+
+        <div class="when" id="currently">Aktualnie</div>
+        
+
+        <div id="temperatureIconeContainer">
+            <img id="icone" class="icones">
+            <div id="temperature"></div>
+        </div>
+
+        <div id="description"></div>
+
+        
+
+        <div class="more">
+            <div id="windCloudsContainer">
+                <div><span>Zachmurzenie </span><span id="clouds"></span></div>
+                <div><span>Kierunek wiatru: </span><span id="windDirection"></span></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="daysContainer">
+
+        <div id="weatherForecastToday" class="weatherBox" style="display: none;">
+
+            <div class="when">Dziś</div>
+
+            <div id="descriptionToday"></div>
+            <img id="iconeToday" class="icones">
+
+            <div id="temperatureToday" class="temperatureDays"></div>
+            <div class="more">
+                <div id="windCloudsContainer">
+                    <div><span>Zachmurzenie </span><span id="cloudsToday"></span></div>
+                    <div><span>Kierunek wiatru: </span><span id="windDirectionToday"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="weatherForecastTomorrow" class="weatherBox" style="display: none;">
+
+            <div class="when">Jutro</div>
+            <div id="descriptionTomorrow"></div>
+            <img id="iconeTomorrow" class="icones">
+
+
+            <div id="temperatureTomorrow" class="temperatureDays"></div>
+            <div class="more">
+                <div id="windCloudsContainer">
+                    <div><span>Zachmurzenie </span><span id="cloudsTomorrow"></span></div>
+                    <div><span>Kierunek wiatru: </span><span id="windDirectionTomorrow"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="weatherForecastDayAfterTomorrow" class="weatherBox" style="display: none;">
+
+            <div class="when">Pojutrze</div>
+            <div id="descriptionDayAfterTomorrow"></div>
+            <img id="iconeDayAfterTomorrow" class="icones">
+
+            <div id="temperatureDayAfterTomorrow" class="temperatureDays"></div>
+            <div class="more">
+                <div id="windCloudsContainer">
+                    <div><span>Zachmurzenie </span><span id="cloudsDayAfterTomorrow"></span></div>
+                    <div><span>Kierunek wiatru: </span><span id="windDirectionDayAfterTomorrow"></span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

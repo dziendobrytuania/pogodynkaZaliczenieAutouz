@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+
+body {
+    background-color: #d8e3d4;
+    margin: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+  }
+
+  #weatherForecast {
+      border: 1px solid #555555;
+      border-radius: 15px;
+      background-color: white;
+      width: 25%;
+      height: 250px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 35px;
+      padding: 2%;
+  }
+
+  .weatherBox {
+    border: 1px solid #555555;
+    border-radius: 15px;
+    background-color: white;
+    width: 17%;
+    height: auto;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 2%;
+}
+
+  #temperature {
+      font-size: 45px;
+      font-weight: bolder;
+      margin: 12px;
+      font-family: "Lato", sans-serif;
+  }
+
+  #day { 
+    font-size: 25px;
+  }
+
+  #city {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+  }
+
+  .more{
+      color:rgba(0, 0, 0, 0.801);
+  }
+
+  #sunContainer {
+      margin-top:5px;
+  }
+
+  .cityDropDown{
+    border: 1px solid #555555;
+    border-radius: 15px;
+    background-color: white;
+    width: 15%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    line-height: 2.2;
+    font-size: 15px
+  };
+
+  .dropDown{
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  #labelToDropDown{
+    font-size: 15px;
+  }
+
+  .when{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #555555;
+  }
+
+  #placeholder{
+    color: #555555;
+  }
+
+  #daysContainer{
+    display: flex;
+    margin: auto;
+    margin-left: 25%
+  }
+
+  .temperatureDays{
+    font-size: 22px;
+  }
+
+  .icones{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .loader {
+    margin-top: 100px;
+    width: 10%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+  }
+
+  #temperatureIconeContainer{
+    display: flex;
+    padding-left: 30%;
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+#inputCity{
+  text-align: center;
+  width:auto;
+}
+
+  
+#inputCityDescription{
+  text-align: center;
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+ 
+#currently{
+  margin-top: 20px;
+}
