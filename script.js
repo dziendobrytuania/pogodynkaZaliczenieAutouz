@@ -38,7 +38,7 @@ let cloudsDayAfterTomorrow = document.querySelector('#cloudsDayAfterTomorrow')
 inputCity.addEventListener('input', function () {
 
   let inputCityValue = inputCity.value
-  let searchAPI = "https://www.wowapi.pl/pogoda/miasta?szukaj="
+  let searchAPI = "https://weather-api-alpha.herokuapp.com/pogoda/miasta?szukaj="
   let searchedCity = searchAPI + inputCityValue
 
  
@@ -86,8 +86,8 @@ submitButton.addEventListener('click', function () {
 
     //uderz do odpowiedniego miasta
     let inputCityValue = inputCity.value
-    let cityAPI = "https://wowapi.pl/pogoda/prognoza?miasto="
-    let selectedCity = cityAPI + inputCityValue + '"'
+    let cityAPI = "https://weather-api-alpha.herokuapp.com/pogoda/prognoza?miasto="
+    let selectedCity = cityAPI +  inputCityValue + '"'
 
     fetch(selectedCity)
   .then(res => res.json())
